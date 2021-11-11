@@ -21,13 +21,13 @@
       <div class="carousel">
         <VueSlickCarousel v-bind="settings">
           <div>
-            <img src="./assets/banner/01_The_wolf_of_bald_street.png"/>
+            <img src="./assets/banner/01_the_wolf_of_bald_street.png"/>
           </div>
           <div>
             <img src="./assets/banner/01_apna_sapna_money_money.png" />
           </div>
           <div>
-            <img src="./assets/banner/01_Ghajini.png" />
+            <img src="./assets/banner/01_ghajini.png" />
           </div>
           <div>
             <img src="./assets/banner/01_money_heist.png" />
