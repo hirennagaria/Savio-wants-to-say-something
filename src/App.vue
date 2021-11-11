@@ -21,10 +21,10 @@
       <div class="carousel">
         <VueSlickCarousel v-bind="settings">
           <div>
-            <img src="./assets/banner/01_the_wolf_of_bald_street.png"/>
+            <img src="./assets/banner/01_the_wolf.png"/>
           </div>
           <div>
-            <img src="./assets/banner/01_apna_sapna_money_money.png" />
+            <img src="./assets/banner/01_apna_sapna.png" />
           </div>
           <div>
             <img src="./assets/banner/01_ghajini.png" />
@@ -36,7 +36,7 @@
             <img src="./assets/banner/01_zero_no_1.png" />
           </div>
           <div>
-            <img src="./assets/banner/02_muje_kuch_kehna_hai.png" />
+            <img src="./assets/banner/02_muje_kuch.png" />
           </div>
         </VueSlickCarousel>
       </div>
