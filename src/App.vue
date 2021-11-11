@@ -21,22 +21,22 @@
       <div class="carousel">
         <VueSlickCarousel v-bind="settings">
           <div>
-            <img src="./assets/banner/01 The wolf of bald street.png" />
+            <img src="./assets/banner/01_The_wolf_of_bald_street.png"/>
           </div>
           <div>
-            <img src="./assets/banner/01 apna sapna money money.png" />
+            <img src="./assets/banner/01_apna_sapna_money_money.png" />
           </div>
           <div>
-            <img src="./assets/banner/01 Ghajini.png" />
+            <img src="./assets/banner/01_Ghajini.png" />
           </div>
           <div>
-            <img src="./assets/banner/01 money heist.png" />
+            <img src="./assets/banner/01_money_heist.png" />
           </div>
           <div>
-            <img src="./assets/banner/01 zero no 1.png" />
+            <img src="./assets/banner/01_zero_no_1.png" />
           </div>
           <div>
-            <img src="./assets/banner/02 muje kuch kehna hai.png" />
+            <img src="./assets/banner/02_muje_kuch_kehna_hai.png" />
           </div>
         </VueSlickCarousel>
       </div>
