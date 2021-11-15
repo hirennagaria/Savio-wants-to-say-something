@@ -166,222 +166,6 @@
       </div>
     </div>
 
-    <!-- <div>
-      <img src="./assets/logo.png" />
-      <h1>{{ msg }}</h1>
-      <h2>Essential Links</h2>
-      <ul>
-        <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-        <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-        <li>
-          <a href="https://chat.vuejs.org" target="_blank">Community Chat</a>
-        </li>
-        <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      </ul>
-      <h2>Ecosystem</h2>
-      <ul>
-        <li>
-          <a href="http://router.vuejs.org/" target="_blank">vue-router</a>
-        </li>
-        <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-        <li>
-          <a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a>
-        </li>
-        <li>
-          <a href="https://github.com/vuejs/awesome-vue" target="_blank"
-            >awesome-vue</a
-          >
-        </li>
-      </ul>
-
-      <ul>
-        <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-        <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-        <li>
-          <a href="https://chat.vuejs.org" target="_blank">Community Chat</a>
-        </li>
-        <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      </ul>
-      <h2>Ecosystem</h2>
-      <ul>
-        <li>
-          <a href="http://router.vuejs.org/" target="_blank">vue-router</a>
-        </li>
-        <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-        <li>
-          <a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a>
-        </li>
-        <li>
-          <a href="https://github.com/vuejs/awesome-vue" target="_blank"
-            >awesome-vue</a
-          >
-        </li>
-      </ul>
-
-      <ul>
-        <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-        <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-        <li>
-          <a href="https://chat.vuejs.org" target="_blank">Community Chat</a>
-        </li>
-        <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      </ul>
-      <h2>Ecosystem</h2>
-      <ul>
-        <li>
-          <a href="http://router.vuejs.org/" target="_blank">vue-router</a>
-        </li>
-        <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-        <li>
-          <a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a>
-        </li>
-        <li>
-          <a href="https://github.com/vuejs/awesome-vue" target="_blank"
-            >awesome-vue</a
-          >
-        </li>
-      </ul>
-
-      <ul>
-        <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-        <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-        <li>
-          <a href="https://chat.vuejs.org" target="_blank">Community Chat</a>
-        </li>
-        <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      </ul>
-      <h2>Ecosystem</h2>
-      <ul>
-        <li>
-          <a href="http://router.vuejs.org/" target="_blank">vue-router</a>
-        </li>
-        <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-        <li>
-          <a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a>
-        </li>
-        <li>
-          <a href="https://github.com/vuejs/awesome-vue" target="_blank"
-            >awesome-vue</a
-          >
-        </li>
-      </ul>
-      <ul>
-        <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-        <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-        <li>
-          <a href="https://chat.vuejs.org" target="_blank">Community Chat</a>
-        </li>
-        <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      </ul>
-      <h2>Ecosystem</h2>
-      <ul>
-        <li>
-          <a href="http://router.vuejs.org/" target="_blank">vue-router</a>
-        </li>
-        <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-        <li>
-          <a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a>
-        </li>
-        <li>
-          <a href="https://github.com/vuejs/awesome-vue" target="_blank"
-            >awesome-vue</a
-          >
-        </li>
-      </ul>
-
-      <ul>
-        <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-        <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-        <li>
-          <a href="https://chat.vuejs.org" target="_blank">Community Chat</a>
-        </li>
-        <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      </ul>
-      <h2>Ecosystem</h2>
-      <ul>
-        <li>
-          <a href="http://router.vuejs.org/" target="_blank">vue-router</a>
-        </li>
-        <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-        <li>
-          <a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a>
-        </li>
-        <li>
-          <a href="https://github.com/vuejs/awesome-vue" target="_blank"
-            >awesome-vue</a
-          >
-        </li>
-      </ul>
-      <ul>
-        <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-        <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-        <li>
-          <a href="https://chat.vuejs.org" target="_blank">Community Chat</a>
-        </li>
-        <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      </ul>
-      <h2>Ecosystem</h2>
-      <ul>
-        <li>
-          <a href="http://router.vuejs.org/" target="_blank">vue-router</a>
-        </li>
-        <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-        <li>
-          <a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a>
-        </li>
-        <li>
-          <a href="https://github.com/vuejs/awesome-vue" target="_blank"
-            >awesome-vue</a
-          >
-        </li>
-      </ul>
-      <ul>
-        <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-        <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-        <li>
-          <a href="https://chat.vuejs.org" target="_blank">Community Chat</a>
-        </li>
-        <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      </ul>
-      <h2>Ecosystem</h2>
-      <ul>
-        <li>
-          <a href="http://router.vuejs.org/" target="_blank">vue-router</a>
-        </li>
-        <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-        <li>
-          <a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a>
-        </li>
-        <li>
-          <a href="https://github.com/vuejs/awesome-vue" target="_blank"
-            >awesome-vue</a
-          >
-        </li>
-      </ul>
-      <ul>
-        <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-        <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-        <li>
-          <a href="https://chat.vuejs.org" target="_blank">Community Chat</a>
-        </li>
-        <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      </ul>
-      <h2>Ecosystem</h2>
-      <ul>
-        <li>
-          <a href="http://router.vuejs.org/" target="_blank">vue-router</a>
-        </li>
-        <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-        <li>
-          <a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a>
-        </li>
-        <li>
-          <a href="https://github.com/vuejs/awesome-vue" target="_blank"
-            >awesome-vue</a
-          >
-        </li>
-      </ul>
-    </div> -->
 
     <footer class="footer">
       <div class="columns is-mobile is-align-items-center">
@@ -433,7 +217,7 @@ $orange: #d65245;
 $bg-color: #ececd1;
 
 @font-face {
-  font-family: appareolight;
+  font-family: "appareolight";
   src: url("assets/fonts/appareolight.otf");
 }
 
@@ -474,15 +258,10 @@ $bg-color: #ececd1;
   color: $orange;
 }
 
-.overview .carousel-wrapper {
-  /*  background: url("assets/black_frame.png") no-repeat top left transparent;
-   width: 50rem;
-   height: 50rem; */
-}
 
 .overview .carousel {
-  // max-width: 500px;
-  // max-height: 500px;
+   max-width: 500px;
+   max-height: 500px;
   //  position: absolute;
   // top: 115px; /* Adjust top position */
   // left: 105px; /* Adjust left position */
@@ -538,5 +317,6 @@ $bg-color: #ececd1;
   background-color: $orange;
   color: $bg-color;
   margin-bottom: 120px;
+  font-family: 'Lato', sans-serif;
 }
 </style>
