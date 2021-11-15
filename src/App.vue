@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="overview">
+    <div class="overview has-text-left">
       <div class="savio-overview content is-medium">
         <h2>WHAT IS SAVIO ALL ABOUT?</h2>
         <p>
@@ -19,26 +19,28 @@
         </p>
       </div>
       <div class="carousel">
-        <VueSlickCarousel v-bind="settings">
-          <div>
-            <img src="./assets/banner/01_the_wolf.png"/>
-          </div>
-          <div>
-            <img src="./assets/banner/01_apna_sapna.png" />
-          </div>
-          <div>
-            <img src="./assets/banner/01_ghajini.png" />
-          </div>
-          <div>
-            <img src="./assets/banner/01_money_heist.png" />
-          </div>
-          <div>
-            <img src="./assets/banner/01_zero_no_1.png" />
-          </div>
-          <div>
-            <img src="./assets/banner/02_muje_kuch.png" />
-          </div>
-        </VueSlickCarousel>
+        <div class="carousel-border">
+          <VueSlickCarousel v-bind="settings">
+            <div>
+              <img src="./assets/banner/01_the_wolf.png" />
+            </div>
+            <div>
+              <img src="./assets/banner/01_apna_sapna.png" />
+            </div>
+            <div>
+              <img src="./assets/banner/01_ghajini.png" />
+            </div>
+            <div>
+              <img src="./assets/banner/01_money_heist.png" />
+            </div>
+            <div>
+              <img src="./assets/banner/01_zero_no_1.png" />
+            </div>
+            <div>
+              <img src="./assets/banner/02_muje_kuch.png" />
+            </div>
+          </VueSlickCarousel>
+        </div>
       </div>
       <div class="film-overview content is-medium">
         <h2>WHAT IS THIS FILM ALL ABOUT</h2>
@@ -104,6 +106,63 @@
             <img src="./assets/bts/09_BTS.png" />
           </div>
         </VueSlickCarousel>
+      </div>
+    </div>
+
+    <div class="overview">
+      <div class="actor-overview content is-medium">
+        <h2 class="has-text-left">ACTOR</h2>
+        <img src="./assets/actov tv.png" class="tv-img" />
+        <p class="has-text-left">
+          Arvind Parab is an 82-year-old actor living in Bombay. He retired at
+          the age of 56 from his career in Banking and started the second
+          innings of his life as an Actor. He started on stage and came to the
+          screen much later in the face of many small side roles in big films
+          with bigger stars. His role as the twisted scientist in the Bingo
+          commercial of 2008 had made him a star in the Indian advertising scene
+          and he still finds himself etched in some corner of the audience's
+          memory even a decade later.
+        </p>
+        <p class="has-text-left">
+          As for us, we believe that as 'Savio' even Arvind wants to say
+          something.
+        </p>
+      </div>
+      <div class="director-overview content is-medium">
+        <h2 class="has-text-left">FILM-MAKER</h2>
+        <img src="./assets/filmmaker.png" class="tv-img" />
+        <p class="has-text-left">
+          Omkar Phatak is a 27-year-old filmmaker based out of Bombay. He
+          started off as a producer in advertising and moved on to a non-fiction
+          form of narrative later on as director and cinematographer. He wrote
+          'Savio Wants To Say Something' in 2019 and has been chasing the right
+          people to collaborate with and bring this film to light. He truly
+          believes that cinema has the power to change lives and recommends
+          watching 'Children of Men' to pretty much everyone he comes across.
+        </p>
+      </div>
+      <div class="donate-overview content is-medium has-text-left">
+        <h2 class="has-text-left">BUT WHY SHOULD I PAY?</h2>
+        <p>Because we don’t have the money to pay</p>
+        <p>Jokes apart...</p>
+        <p>
+          This campaign is a sincere attempt to raise funds that will be solely
+          used to execute the short film's production. The specific areas that
+          the money will be spent on are location fees (so we don't end up in
+          prison), art setups (re-creating a certain aesthetic from the 60's &
+          70's era) overall production costs, technical requirements (so the
+          film can look & sound the way it should) pre & post-production
+          expenses, festival entries & other relevant expenses of the same
+          nature.
+        </p>
+        <p>
+          Our target as of now is to raise a minimum of 12 Lakh Rupees out of
+          which we have managed to raise 3 Lakh so far. With a kind gesture from
+          your end, this number would certainly be different.
+        </p>
+      </div>
+      <div class="donate-btn-div ">
+        <button class="button donate-btn">HELP SAVIO MAKE HIS FILM</button>
       </div>
     </div>
 
@@ -359,6 +418,7 @@ export default {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        draggable: true,
       },
     };
   },
@@ -372,11 +432,16 @@ $lime-green: #7eb299;
 $orange: #d65245;
 $bg-color: #ececd1;
 
+@font-face {
+  font-family: appareolight;
+  src: url("assets/fonts/appareolight.otf");
+}
+
 #app {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: "Lato", sans-serif;
+  font-family: "appareolight";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -420,6 +485,11 @@ $bg-color: #ececd1;
   margin: 32px auto;
 }
 
+.carousel-border {
+  border: 25px solid #ffffff;
+  border-radius: 1px;
+}
+
 .teaser-bts {
   background-color: $orange;
   padding-top: 16px;
@@ -447,5 +517,15 @@ $bg-color: #ececd1;
   max-height: 500px;
 
   margin: 32px auto;
+}
+
+.tv-img {
+  margin: 32px auto;
+}
+
+.donate-btn {
+  background-color: $orange;
+  color: $bg-color;
+  margin-bottom: 120px;
 }
 </style>
