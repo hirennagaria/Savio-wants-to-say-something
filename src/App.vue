@@ -474,14 +474,25 @@ $bg-color: #ececd1;
   color: $orange;
 }
 
-.overview .carousel {
-  max-width: 500px;
-  max-height: 500px;
+.overview .carousel-wrapper {
+  /*  background: url("assets/black_frame.png") no-repeat top left transparent;
+   width: 50rem;
+   height: 50rem; */
+}
 
-  border: 7px double #1e1d1d;
+.overview .carousel {
+  // max-width: 500px;
+  // max-height: 500px;
+  //  position: absolute;
+  // top: 115px; /* Adjust top position */
+  // left: 105px; /* Adjust left position */
+
+ 
+
+   border: 7px double #1e1d1d;
   border-radius: 1px;
   -webkit-box-shadow: 4px 4px 13px 2px rgba(0, 0, 0, 0.73);
-  box-shadow: 4px 4px 13px 2px rgba(0, 0, 0, 0.73);
+  box-shadow: 4px 4px 13px 2px rgba(0, 0, 0, 0.73); 
   margin: 32px auto;
 }
 
