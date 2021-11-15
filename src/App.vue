@@ -18,27 +18,29 @@
           travels through his rant about life, love and everything in between.
         </p>
       </div>
-      <div class="carousel">
-        <VueSlickCarousel v-bind="settings">
-          <div>
-            <img src="./assets/banner/01_the_wolf.png"/>
-          </div>
-          <div>
-            <img src="./assets/banner/01_apna_sapna.png" />
-          </div>
-          <div>
-            <img src="./assets/banner/01_ghajini.png" />
-          </div>
-          <div>
-            <img src="./assets/banner/01_money_heist.png" />
-          </div>
-          <div>
-            <img src="./assets/banner/01_zero_no_1.png" />
-          </div>
-          <div>
-            <img src="./assets/banner/02_muje_kuch.png" />
-          </div>
-        </VueSlickCarousel>
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <VueSlickCarousel v-bind="settings">
+            <div>
+              <img src="./assets/banner/01_the_wolf.png" />
+            </div>
+            <div>
+              <img src="./assets/banner/01_apna_sapna.png" />
+            </div>
+            <div>
+              <img src="./assets/banner/01_ghajini.png" />
+            </div>
+            <div>
+              <img src="./assets/banner/01_money_heist.png" />
+            </div>
+            <div>
+              <img src="./assets/banner/01_zero_no_1.png" />
+            </div>
+            <div>
+              <img src="./assets/banner/02_muje_kuch.png" />
+            </div>
+          </VueSlickCarousel>
+        </div>
       </div>
       <div class="film-overview content is-medium">
         <h2>WHAT IS THIS FILM ALL ABOUT</h2>
@@ -372,11 +374,17 @@ $lime-green: #7eb299;
 $orange: #d65245;
 $bg-color: #ececd1;
 
+@font-face {
+    font-family: 'AppareoLight';
+    src: url('assets/fonts/appareolight.otf');
+  
+}
+
 #app {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  font-family: "Lato", sans-serif;
+  font-family: "AppareoLight";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -409,14 +417,25 @@ $bg-color: #ececd1;
   color: $orange;
 }
 
-.overview .carousel {
-  max-width: 500px;
-  max-height: 500px;
+.overview .carousel-wrapper {
+  /*  background: url("assets/black_frame.png") no-repeat top left transparent;
+   width: 50rem;
+   height: 50rem; */
+}
 
-  border: 7px double #1e1d1d;
+.overview .carousel {
+  // max-width: 500px;
+  // max-height: 500px;
+  //  position: absolute;
+  // top: 115px; /* Adjust top position */
+  // left: 105px; /* Adjust left position */
+
+ 
+
+   border: 7px double #1e1d1d;
   border-radius: 1px;
   -webkit-box-shadow: 4px 4px 13px 2px rgba(0, 0, 0, 0.73);
-  box-shadow: 4px 4px 13px 2px rgba(0, 0, 0, 0.73);
+  box-shadow: 4px 4px 13px 2px rgba(0, 0, 0, 0.73); 
   margin: 32px auto;
 }
 
