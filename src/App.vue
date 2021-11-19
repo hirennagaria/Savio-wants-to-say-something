@@ -57,33 +57,33 @@
           </div>
         </div>
         <p>
-          Savio is an 82 year-old man who lives a simple life trying to master
+          <b>Savio</b> is an 82 year-old man who lives a simple life trying to master
           frying round eggs in the morning to chit-chatting with lazy pigeons by
           the evening.
         </p>
         <p>
           One fine day, he decides to make his ordinary life a little less
-          ordinary by recording a video message for the people who know him and
-          for a reason that only he seems to know.
+          ordinary by recording a <b>video</b> message for the people who know him and
+          for a <b>reason</b> that only he seems to know.
         </p>
         <p>
           While doing so, he takes everyone aboard a train of thought that
-          travels through his rant about life, love and everything in between.
+          travels through his rant about life, <b>love</b> and everything in between.
         </p>
       </div>
 
       <div class="film-overview content is-medium">
         <h5>WHAT IS THIS FILM ALL ABOUT?</h5>
         <p>
-          In simple words, the film is a representation of an old grown man's
+          In simple words, the <b>core</b> idea of the film is a representation of an old grown man's
           thoughts about life and love in a comical and honest way.
         </p>
         <p>
-          The approach taken for the narrative is a casual, sit-down,
+          The approach taken for the <b>narrative</b> is a casual, sit-down,
           piece-to-camera where Savio is speaking to the viewer. We see him fail
           miserably to come to the point but somewhere in his failure lies his
           pursuit of winning people over. What he eventually wants to say is the
-          foundation of the film's narrative.
+          <b>foundation<b> of the film's narrative.
         </p>
       </div>
     </div>
@@ -146,15 +146,15 @@
         <p class="has-text-left">
           Arvind Parab is an 82-year-old actor living in Bombay. He retired at
           the age of 56 from his career in Banking and started the second
-          innings of his life as an Actor. He started on stage and came to the
+          innings of his life as an <b>Actor</b>. He started on stage and came to the
           screen much later in the face of many small side roles in big films
-          with bigger stars. His role as the twisted scientist in the Bingo
+          with bigger stars. His role as the twisted <b>scientist</b> in the Bingo
           commercial of 2008 had made him a star in the Indian advertising scene
           and he still finds himself etched in some corner of the audience's
           memory even a decade later.
         </p>
         <p class="has-text-left">
-          As for us, we believe that as 'Savio' even Arvind wants to say
+          As for us, we believe that as 'Savio' even <b>Arvind</b> wants to say
           something.
         </p>
       </div>
@@ -165,9 +165,9 @@
           Omkar Phatak is a 27-year-old filmmaker based out of Bombay. He
           started off as a producer in advertising and moved on to a non-fiction
           form of narrative later on as director and cinematographer. He wrote
-          'Savio Wants To Say Something' in 2019 and has been chasing the right
-          people to collaborate with and bring this film to light. He truly
-          believes that cinema has the power to change lives and recommends
+          <b>'Savio Wants To Say Something'</b> in 2019 and has been chasing the right
+          people to collaborate with and bring this film to <b>light</b>. He truly
+          believes that <b>cinema</b> has the power to change lives and recommends
           watching 'Children of Men' to pretty much everyone he comes across.
         </p>
       </div>
@@ -176,23 +176,23 @@
         <p>Because we don’t have the money to pay</p>
         <p>Jokes apart...</p>
         <p>
-          This campaign is a sincere attempt to raise funds that will be solely
+          This campaign is a sincere attempt to raise <b>funds</b> that will be solely
           used to execute the short film's production. The specific areas that
-          the money will be spent on are location fees (so we don't end up in
-          prison), art setups (re-creating a certain aesthetic from the 60's &
-          70's era) overall production costs, technical requirements (so the
+          the money will be spent on are <b>location</b> fees (so we don't end up in
+          prison), <b>art</b> setups (re-creating a certain aesthetic from the 60's &
+          70's era) overall <b>production</b> costs, technical requirements (so the
           film can look & sound the way it should) pre & post-production
-          expenses, festival entries & other relevant expenses of the same
+          expenses, <b>festival</b> entries & other relevant expenses of the same
           nature.
         </p>
         <p>
           Our target as of now is to raise a minimum of 12 Lakh Rupees out of
-          which we have managed to raise 3 Lakh so far. With a kind gesture from
+          which we have managed to raise 3 Lakh so far. With a <b>kind</b> gesture from
           your end, this number would certainly be different.
         </p>
       </div>
       <div class="donate-btn-div">
-        <button class="button donate-btn" id="donate">HELP SAVIO MAKE HIS FILM</button>
+        <button class="button donate-btn" v-on:click="onButtonClick()" id="donate">HELP SAVIO MAKE HIS FILM</button>
       </div>
     </div>
 
@@ -257,6 +257,11 @@ export default {
     });
   },
   components: { VueSlickCarousel },
+  methods: {
+    onButtonClick() {
+        Instamojo.open('https://www.instamojo.com/@omkarp21');
+      }
+  }
 };
 </script>
 
