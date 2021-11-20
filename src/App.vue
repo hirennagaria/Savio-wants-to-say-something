@@ -211,7 +211,7 @@
     <footer class="footer">
       <div class="columns is-mobile is-align-items-center">
         <div class="column savio-gif">
-          <img src="./assets/sofa-savio.gif" ref="gif" class="sofa-savio" />
+          <img src="./assets/sequence1.png" ref="gif" class="sofa-savio" />
         </div>
       </div>
     </footer>
