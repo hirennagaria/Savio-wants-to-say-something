@@ -27,11 +27,15 @@
 
           <a class="navbar-item" href="#filmmaker"> FILM-MAKER </a>
 
-          <a class="navbar-item" href="#donate"> DONATE </a>
+          <a class="navbar-item" href="#donate"> CONTRIBUTE </a>
         </div>
       </div>
     </nav>
     <div class="overview has-text-left" id="overview">
+      <div class="camera-overlay">
+        <div class="circle"></div>
+        <img src="./assets/camera.png" class="cameraicon" />
+      </div>
       <div class="savio-overview content is-medium">
         <h5>WHAT IS SAVIO ALL ABOUT?</h5>
         <div class="carousel">
@@ -75,6 +79,10 @@
         </p>
       </div>
 
+      <div class="typewriter-overlay">
+        <div class="circle"></div>
+        <img src="./assets/typewriter.png" class="typewriter" />
+      </div>
       <div class="film-overview content is-medium">
         <h5>WHAT IS THIS FILM ALL ABOUT?</h5>
         <p>
@@ -191,7 +199,7 @@
           expenses of the same nature.
         </p>
         <p>
-          Our target as of now is to raise a minimum of 12 Lakh Rupees out of
+          Our target as of now is to raise a minimum of 15 Lakh Rupees out of
           which we have managed to raise 3 Lakh so far. With a
           <b>kind</b> gesture from your end, this number would certainly be
           different.
@@ -200,11 +208,27 @@
       <div class="donate-btn-div">
         <button
           class="button donate-btn"
-          v-on:click="onButtonClick()"
+          v-on:click="onButtonClick"
           id="donate"
         >
           HELP SAVIO MAKE HIS FILM
         </button>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h5>WANNA KNOW MORE? LET'S CHAT</h5>
+      <div class="contact-info columns has-text-left-mobile">
+        <div class="email column">
+          <img src="./assets/icons/emailicon.png" class="contact-content" />
+          <span style="align-self: center"
+            >saviowantstosaysomething@gmail.com</span
+          >
+        </div>
+        <div class="call column">
+          <img src="./assets/icons/callicon.png" class="contact-content" />
+          <span style="align-self: center">9930854099</span>
+        </div>
       </div>
     </div>
 
@@ -215,6 +239,27 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal" id="qrid">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box overview is-medium">
+          <img src="./assets/qrcode.jpeg" />
+          <p>
+            Bank Name: Kotak Mahindra Bank<br />
+
+            Branch: Tilak Nagar, Chembur<br />
+
+            Account Name: Omkar D Phatak <br />
+
+            Account Number: 9011543841<br />
+
+            IFSC Code: KKBK0001373
+          </p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
   </div>
 </template>
 
@@ -226,6 +271,18 @@ import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 export default {
   name: "app",
+  metaInfo: {
+    title: "Savio wants to say something",
+    htmlAttrs: {
+      lang: "en-US",
+    },
+    meta: [
+      { charset: "utf-8" },
+      { name: "description", content: "Find out what Savio has to say?" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "image", content: "./assets/shareimage.png" },
+    ],
+  },
   data() {
     return {
       msg: "Welcome to Your Vue.js App",
@@ -244,7 +301,6 @@ export default {
   },
   mounted() {
     this.$nextTick(function () {
-    
       document.addEventListener("DOMContentLoaded", () => {
         // Get all "navbar-burger" elements
         const $navbarBurgers = Array.prototype.slice.call(
@@ -267,13 +323,64 @@ export default {
             });
           });
         }
+
+        const $modalBackground = Array.prototype.slice.call(
+          document.querySelectorAll(".modal-background"),
+          0
+        );
+
+        // Check if there are any navbar burgers
+        if ($modalBackground.length > 0) {
+          // Add a click event on each of them
+          $modalBackground.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Get the target from the "data-target" attribute
+              //const target = el.dataset.target;
+              //const $target = document.getElementById(target);
+              const el = document.getElementById("qrid");
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle("is-active");
+              //$target.classList.toggle("is-active");
+            });
+          });
+        }
+
+        const $modalClose = Array.prototype.slice.call(
+          document.querySelectorAll(".modal-close"),
+          0
+        );
+
+        // Check if there are any navbar burgers
+        if ($modalClose.length > 0) {
+          // Add a click event on each of them
+          $modalClose.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Get the target from the "data-target" attribute
+              //const target = el.dataset.target;
+              //const $target = document.getElementById(target);
+              const el = document.getElementById("qrid");
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle("is-active");
+              //$target.classList.toggle("is-active");
+            });
+          });
+        }
       });
     });
   },
   components: { VueSlickCarousel },
   methods: {
-    onButtonClick() {
-      Instamojo.open("https://www.instamojo.com/@omkarp21");
+    onButtonClick(event) {
+      //Instamojo.open("https://www.instamojo.com/@omkarp21");
+
+      //const target = event.target;
+      //const $target = document.getElementById(target);
+      const el = document.getElementById("qrid");
+
+      el.classList.toggle("is-active");
+      //$target.classList.toggle("is-active");
     },
     scrollFunction() {
       this.count++;
@@ -288,24 +395,23 @@ export default {
       }
     },
   },
-  created () {
-    window.addEventListener('scroll', this.scrollFunction);
+  created() {
+    window.addEventListener("scroll", this.scrollFunction);
   },
-  destroyed () {
-    window.removeEventListener('scroll', this.scrollFunction);
+  destroyed() {
+    window.removeEventListener("scroll", this.scrollFunction);
   },
   computed: {
-    img1: function() {
+    img1: function () {
       return require("./assets/sequence1.png");
     },
-    img2: function() {
+    img2: function () {
       return require("./assets/sequence2.png");
     },
-    img3: function() {
+    img3: function () {
       return require("./assets/sequence3.png");
     },
-    
-  }
+  },
 };
 </script>
 
@@ -322,14 +428,21 @@ $bg-color: #ececd1;
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
 }
 
 .navbar {
   background-color: $bg-color !important;
+  //background: url("assets/bgtexture.png") repeat-y center center scroll;
 }
 
 .navbar-menu {
   background-color: $bg-color !important;
+  //background: url("assets/bgtexture.png") repeat-y center center scroll;
 }
 
 .navbar-item {
@@ -351,6 +464,7 @@ html {
   text-align: center;
   color: $text-color;
   background-color: $bg-color !important;
+  //background: url("assets/bgtexture.png") repeat-y center center scroll;
 }
 
 .footer {
@@ -399,6 +513,7 @@ html {
   -webkit-box-shadow: 4px 4px 13px 2px rgba(0, 0, 0, 0.73);
   box-shadow: 4px 4px 13px 2px rgba(0, 0, 0, 0.73);
   margin: 32px auto;
+  background-color: white;
 }
 
 .carousel-border {
@@ -407,9 +522,11 @@ html {
 }
 
 .teaser-bts {
-  background-color: $orange;
+  background-color: $orange !important;
 
   padding: 16px 32px 0 32px;
+
+  //background: url("assets/bgtexture.png") repeat-y center center scroll;
 }
 
 .teaser-bts h5 {
@@ -457,8 +574,156 @@ html {
 .donate-btn {
   background-color: $orange;
   color: $bg-color;
-  margin-bottom: 120px;
+
   font-family: "Lato", sans-serif;
+  width: 70%;
+}
+
+.contact {
+  padding-top: 32px;
+  padding-bottom: 120px;
+  background-color: $text-color;
+  color: $bg-color;
+}
+
+.contact-info {
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.email {
+  display: flex !important;
+  //justify-content: center;
+  align-content: center;
+
+  @media screen and (min-width: 769px) {
+    justify-content: center;
+  }
+}
+
+.call {
+  display: flex !important;
+  //justify-content: center;
+  align-content: center;
+
+  @media screen and (min-width: 769px) {
+    justify-content: center;
+  }
+}
+
+.contact-content {
+  margin-right: 16px;
+  //width: 35px;
+  height: 25px;
+}
+
+.slick-dots {
+  margin-left: 0px !important;
+}
+
+@media screen and (min-width: 1023px) {
+  .camera-overlay {
+    position: absolute;
+    top: 80px;
+    right: 60px;
+  }
+
+  .camera-overlay .circle {
+    background-color: $lime-green;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .cameraicon {
+    //background: url("assets/camera.png") no-repeat center center transparent;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    //width: 150px;
+    //height: 120px;
+  }
+
+  .typewriter-overlay {
+    position: absolute;
+    top: 690px;
+    right: 60px;
+  }
+
+  .typewriter-overlay .circle {
+    background-color: $lime-green;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    top: 100px;
+  }
+
+  .typewriter-overlay .typewriter {
+    //background: url("assets/typewriter.png") no-repeat center center transparent;
+    position: absolute;
+    top: 55px;
+    right: 60px;
+    //width: 140px;
+    //height: 110px;
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  .camera-overlay {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+  }
+
+  .camera-overlay .circle {
+    background-color: $lime-green;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .cameraicon {
+    //background: url("assets/camera.png") no-repeat center center transparent;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    //width: 80px;
+    //height: 50px;
+  }
+
+  .typewriter-overlay {
+    position: absolute;
+    top: 800px;
+    right: 5px;
+  }
+
+  .typewriter-overlay .circle {
+    background-color: $lime-green;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 100px;
+  }
+
+  .typewriter-overlay .typewriter {
+    //background: url("assets/typewriter.png") no-repeat center center transparent;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    //width: 70px;
+    //height: 55px;
+  }
+}
+
+.box {
+  color: $text-color;
+  background-color: $bg-color !important;
+  padding: 32px;
+  font-size: 1.25em;
+}
+
+.box img {
+  margin-bottom: 16px;
   width: 70%;
 }
 </style>
