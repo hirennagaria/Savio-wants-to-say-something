@@ -28,6 +28,8 @@
           <a class="navbar-item" href="#filmmaker"> FILM-MAKER </a>
 
           <a class="navbar-item" href="#donate"> CONTRIBUTE </a>
+
+          <a class="navbar-item" href="#donate"> CONTACT US </a>
         </div>
       </div>
     </nav>
@@ -157,7 +159,7 @@
         <img src="./assets/actortv.png" class="tv-img" />
         <p class="has-text-left">
           Arvind Parab is an 82-year-old actor living in Bombay. He retired at
-          the age of 56 from his career in Banking and started the second
+          the age of 56 from his career in Shipping and started the second
           innings of his life as an <b>Actor</b>. He started on stage and came
           to the screen much later in the face of many small side roles in big
           films with bigger stars. His role as the twisted <b>scientist</b> in
@@ -244,7 +246,10 @@
       <div class="modal-background"></div>
       <div class="modal-content">
         <div class="box overview is-medium">
-          <img src="./assets/qrcode.jpeg" />
+          <span><b>Scan & Pay</b></span
+          ><br />
+          <img src="./assets/qrcode.jpeg" /><br />
+          <span><b>For bank transfer</b></span>
           <p>
             Bank Name: Kotak Mahindra Bank<br />
 
@@ -720,10 +725,12 @@ body {
   background-color: $bg-color !important;
   padding: 32px;
   font-size: 1.25em;
+
+  padding-bottom: 64px;
 }
 
 .box img {
-  margin-bottom: 16px;
+  margin: 8px 0 16px 0;
   width: 70%;
 }
 </style>
